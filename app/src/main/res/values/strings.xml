@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Navigation</string>
+    <string name="txt_main_activity">Acá incluiremos nuestros Fragments, happy coding!</string>
+    <string name="title_movies_trivia_question">Movies Trivia (%1$d/%2$d)</string>
+    <string name="btn_txt_send">Enviar</string>
+    <string name="btn_txt_play_again">Jugar nuevamente</string>
+    <string name="btn_txt_try_again">Volver a intentarlo</string>
+</resources>
