@@ -9,4 +9,9 @@
     <string name="txt_title">Trivia</string>
     <string name="txt_title_about_app">Acerca de</string>
     <string name="txt_about_app">Esta aplicación de ejemplo tiene fines académicos o de práctica, para todos aquellas personas que están comenzando en el magnífico múndo de Android y su desarrollo nativo, haciendo uso de Kotlin como lenguaje principal y repasando o revisando los aspectos básicos de la tecnología.</string>
+    <string name="txt_title_rules">Reglas del juego</string>
+    <string name="txt_rules">Estas son las reglas del juego:
+        \n1. Solo tienes una oportunidad por pregunta para responder bien.
+        \n2. Si te equivocas el app mostrará una vista para donde nos indica que perdimos y un botón para volver a jugar.
+        \n3. Si aciertas en todas las preguntas te mostrará una vista dónde te muestra un trofeo y un botón que te permite volver a jugar.</string>
 </resources>
