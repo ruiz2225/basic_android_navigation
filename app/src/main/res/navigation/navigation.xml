@@ -50,4 +50,9 @@
             app:destination="@id/fragmentQuestions"
             app:popUpTo="@id/fragmentHome" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentAboutApp"
+        android:name="com.example.navigation.FragmentAboutApp"
+        android:label="@string/txt_title_about_app"
+        tools:layout="@layout/fragment_about_app" />
 </navigation>
