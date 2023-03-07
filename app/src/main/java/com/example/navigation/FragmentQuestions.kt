@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.navigation.databinding.FragmentQuestionsBinding
 
 /**
@@ -63,9 +64,11 @@ class FragmentQuestions : Fragment() {
                         binding.invalidateAll()
                     } else {
                         // Si ha ganado vamos al fragmento de FragmentWon.
+                        it.findNavController().navigate(R.id.action_fragmentQuestions_to_fragmentWon)
                     }
                 } else {
                     // Si ha contestado alguna pregunta mal, lo llevará al FragmentTryAgain.
+                    it.findNavController().navigate(R.id.action_fragmentQuestions_to_fragmentTryAgain)
                 }
             }
         }

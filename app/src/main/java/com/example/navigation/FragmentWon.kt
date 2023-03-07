@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import com.example.navigation.databinding.FragmentWonBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -18,6 +21,10 @@ class FragmentWon : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_won, container, false)
+        val binding = DataBindingUtil.inflate<FragmentWonBinding>(inflater, R.layout.fragment_won, container, false)
+        binding.btnPlayAgain.setOnClickListener {
+            it.findNavController().navigate(R.id.action_fragmentWon_to_fragmentQuestions)
+        }
+        return binding.root
     }
 }
